@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-color: #f0f3ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#searchBox{
+    border-radius: 55px;
+    padding: 30px;
+    background: #f0f3ff;
+    display: flex;
+    align-items: center;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                     -6px -6px 10px -1px rgba(255, 255, 255, 0.7)
+}
+#googleIcon{
+    width: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    
+
+}
+.micIcon{
+    width: 0px;
+    transition: all .5s;
+    transition-delay: .5s;
+
+}
+input{
+    font-size: 20px;
+    width: 0px;
+    border: 0;
+    background: transparent;
+    outline: none;
+    transition: all 1s;
+
+}
+.active input{
+    width: 500px;
+    
+}
+.active .micIcon{
+    width: 20px;
+    
+}
